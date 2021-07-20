@@ -1,9 +1,9 @@
-import react from "react";
+//import react from "react";
 import fs from "fs";
 import path from "path";
-import Head from 'next/head';
-import Link from 'next/link';
-import { GetStaticProps, GetStaticPaths } from 'next'
+//import Head from 'next/head';
+//import Link from 'next/link';
+//import { GetStaticProps, GetStaticPaths } from 'next'
 import Layout from "../component/Layout";
 
 
