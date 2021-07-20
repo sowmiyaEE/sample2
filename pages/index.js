@@ -18,11 +18,11 @@ const Home=({ slugs }) => (
 
  <div key={slug}>  
     
- <Link href={"/course/"+slug}>
+ <link href={"/course/"+slug}>
      
   <a>{"/course/"+slug}</a>
     
-</Link>
+</link>
 
   </div>
   );
