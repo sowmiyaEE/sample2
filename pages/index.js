@@ -1,7 +1,7 @@
 import Head from 'next/Head';
 import Link from 'next/Link';
 import fs from 'fs';
-import Layout from "component/Layout"
+import Layout from "./component/Layout"
 
 ;
 const Home=({ slugs }) => (
