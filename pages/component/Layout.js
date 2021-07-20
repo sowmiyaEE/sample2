@@ -1,6 +1,5 @@
 //import Head from "next/Head";
 const Layout=() => {
-return(
   return (
     <div className="root">
       
