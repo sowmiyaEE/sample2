@@ -1,4 +1,4 @@
 //import Head from "next/Head";
 const Layout=() => {
-return(<div></div>);};
+return();};
 export default Layout;
