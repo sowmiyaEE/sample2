@@ -6,7 +6,7 @@ import Layout from "./component/Layout"
 ;
 const Home=({ slugs }) => (
 
- <Layout>  
+   
 
 <div>
   
@@ -31,7 +31,7 @@ const Home=({ slugs }) => (
 )}
 
 </div>
-</Layout>
+
 
 );
 
