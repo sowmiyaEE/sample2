@@ -1,10 +1,11 @@
-//import react from "react";
+import react from "react";
 import fs from "fs";
 import path from "path";
-//import Head from 'next/head';
+import matter from "gray-matter";
+import Head from 'next/head';
 //import Link from 'next/link';
-//import { GetStaticProps, GetStaticPaths } from 'next'
-//import Layout from "../component/Layout";
+import { GetStaticProps, GetStaticPaths } from 'next'
+import Layout from "component/Layout";
 
 
 export const getStaticPaths = async() => {
@@ -18,11 +19,21 @@ return {paths:Paths,fallback: false};}
 
 export const getStaticProps = async({params:{slug}}) =>{
 const cote=fs.readFileSync(path.join('courses',slug+'.md')).toString();
-return {props: {cote}};
+const coteparsed=matter(cote);
+return {props: {
+contents : coteparsed.content,data : coteparsed.data
+}};
 };
 
 
-const Post=({cote}) => {
-return <div>The contents: {cote}</div>;
+const Post=({contents,data}) => {
+return (<><Head><title>{data.title}</title>
+<meta title="description" content={data.description}/>
+</Head>
+<div>The contents: 
+<pre>{contents}</pre>
+</div>
+</>
+);
 };
 export default Post;
