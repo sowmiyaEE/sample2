@@ -1,5 +1,5 @@
-//import Head from 'next/Head';
-//import Link from 'next/Link';
+import Head from 'next/Head';
+import Link from 'next/Link';
 import fs from 'fs';
 import Layout from "./component/Layout"
 
@@ -18,11 +18,11 @@ const Home=({ slugs }) => (
 
  <div key={slug}>  
     
- <link href={"/course/"+slug}>
+ <Link href={"/course/"+slug}>
      
   <a>{"/course/"+slug}</a>
     
-</link>
+</Link>
 
   </div>
   );
