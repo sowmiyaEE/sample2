@@ -1,6 +1,7 @@
-//import Head from "next/Head";
+import Head from "next/Head";
 const Layout=() => {
   return (
+    <Head>
     <div className="root">
       
         <meta charSet="utf-8" />
@@ -30,7 +31,7 @@ const Layout=() => {
         `}
       </style>
     </div>
-  
+  </Head>
 
 );};
 export default Layout;
