@@ -1,7 +1,7 @@
 import react from "react";
 import fs from "fs";
 import path from "path";
-import matter from "gray-matter";
+//import matter from "gray-matter";
 import Head from 'next/head';
 //import Link from 'next/link';
 import { GetStaticProps, GetStaticPaths } from 'next'
@@ -19,6 +19,7 @@ return {paths:Paths,fallback: false};}
 
 export const getStaticProps = async({params:{slug}}) =>{
 const cote=fs.readFileSync(path.join('courses',slug+'.md')).toString();
+  const matter=require('gray-matter');
 const coteparsed=matter(cote);
 return {props: {
 contents : coteparsed.content,data : coteparsed.data
