@@ -23,6 +23,6 @@ return {props: {cote}};
 
 
 const Post=({cote}) => {
-return <Layout><div>The contents: {cote}</div></Layout>;
+return <div>The contents: {cote}</div>;
 };
 export default Post;
