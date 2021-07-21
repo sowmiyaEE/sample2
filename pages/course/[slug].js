@@ -5,7 +5,7 @@ import matter from "gray-matter";
 import Head from 'next/head';
 //import Link from 'next/link';
 import { GetStaticProps, GetStaticPaths } from 'next'
-import Layout from "component/Layout";
+
 
 
 export const getStaticPaths = async() => {
