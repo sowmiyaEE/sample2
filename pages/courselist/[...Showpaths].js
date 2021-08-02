@@ -81,7 +81,9 @@ allarray.push(childarray[i]);
         for(var j=0;j<t.length;j++)
               childarray.push(ts+'/'+t[j]);
   }
-  else {var filec=fs.readFileSync(mother+'/'+ts);var cot=matter(filec);var tt=cot.data.title;allpaths.push({tt});}
+  else {
+    var filec=await import(`../../${mother}/${ts}`)
+    var cot=matter(filec);var tt=cot.data.title;allpaths.push({tt});}
 }
 
 const allarra=allarray.map(ao=>'/courselist'+'/'+ao.replace('.md','/true'));
