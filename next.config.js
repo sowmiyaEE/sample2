@@ -1,4 +1,4 @@
-const withCSS = require('@zeit/next-css')
+
 module.exports = {
   // Target must be serverless
   target: "serverless",
@@ -8,5 +8,5 @@ module.exports = {
       use: 'raw-loader',
     })
     return config
-  },withCSS
+  }
 };
