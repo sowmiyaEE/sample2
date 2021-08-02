@@ -1,8 +1,6 @@
 ---
-
-title:'Mathematics'
-description:'course desc:All major areas including probablity and statistics'
-
+title : 'Mathematics'
+description: 'course desc:All major areas including probablity and statistics'
 ---
 
 
