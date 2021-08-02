@@ -1,5 +1,5 @@
 
-modules.exports = {
-  target: 'serverless',
-   webpack5: false,
-} 
+module.exports = {
+  // Target must be serverless
+  target: "serverless",
+};
