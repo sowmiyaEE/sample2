@@ -100,7 +100,7 @@ pathname+=Show.params.Showpaths[i]+'/';
 console.log('path',pathname);
 if(pathname.includes('/true')){
 const s=pathname.replace('/true','.md');
-const file=import(`../../${course}/${s}`);
+const file=import(`../../course/${s}`);
 const rfi=matter(file.toString());
 
 return({props:{slugs:[rfi.content,rfi.data.title,rfi.data.description],pare:s,directory:true}});
