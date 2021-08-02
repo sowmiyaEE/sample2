@@ -52,9 +52,9 @@ var rf2=[];
 
 const rf0=files.map(filename=>
 {if(filename.includes(".md")){
-const file=fs.readFileSync('course'+'/'+filename);
+const file=await import(`../../${course}/${filename}`);
 
-rf2=matter(file);
+rf2=matter(file.toString());
 //filename=rf2.content;
 filename=rf2.data.title+"   "+rf2.data.description+"...";
 console.log('file:data:<',rf2.data,'title',rf2.data.title);
