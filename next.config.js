@@ -1,6 +1,5 @@
 
-const withCSS = require('@zeit/next-css')
-modules.exports = withCSS({
+modules.exports = {
   target: 'serverless',
    webpack5: false,
-})
+} 
