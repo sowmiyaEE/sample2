@@ -1,5 +1,5 @@
 //import Head from 'next/Head';
-import Link from 'next/Link';
+import Link from 'next/link';
 import Layout from '../component/Layout';
 import configdata from '../siteconfig.json';
 const Home=({ title,description }) => (
