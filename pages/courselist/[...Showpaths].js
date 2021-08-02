@@ -1,5 +1,5 @@
 import fs from 'fs';
-import Link from 'next/Link';
+import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import matter from 'gray-matter';
 import Layout from '../../component/Layout';
