@@ -83,7 +83,9 @@ allarray.push(childarray[i]);
   }
   else {
     var filec=import(`../../${mother}/${ts}`);
-    var cot=matter(filec.toString());var tt=cot.data.title;allpaths.push({tt});}
+    var cot=matter(filec.toString());
+    console.log(cot);
+    var tt=cot.data.title;allpaths.push({tt});}
 }
 
 const allarra=allarray.map(ao=>'/courselist'+'/'+ao.replace('.md','/true'));
