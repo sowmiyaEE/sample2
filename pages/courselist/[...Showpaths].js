@@ -102,7 +102,8 @@ pathname+=Show.params.Showpaths[i]+'/';
 console.log('path',pathname);
 if(pathname.includes('/true')){
 const s=pathname.replace('/true','.md');
-const file=await import(`../../course/${s}`);
+const file=import(`../../course/${s}`);
+  console.log("FILELIST",file.toString());
 const rfi=matter(file.toString());
 
 return({props:{slugs:[rfi.content,rfi.data.title,rfi.data.description],pare:s,directory:true}});
@@ -117,7 +118,8 @@ filename.replace(".md","/true"));
 var rf2=[];
 const rf0=files.map(filename=>
 {if(filename.includes(".md")){
-const file=await import(`../../course/${pathname+filename}`)
+const file= import(`../../course/${pathname+filename}`)
+console.log("FILE",file.toString());
 
 rf2=matter(file.toString());
 filename=rf2.data.title+"-"+rf2.data.description+"...";
