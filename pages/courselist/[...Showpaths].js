@@ -82,7 +82,7 @@ allarray.push(childarray[i]);
               childarray.push(ts+'/'+t[j]);
   }
   else {
-    var filec=import(`../../${mother}/${ts}`);
+    var filec=await import(`../../${mother}/${ts}`);
     var cot=matter(filec.toString());
     console.log(cot);
     var tt=cot.data.title;allpaths.push({tt});}
