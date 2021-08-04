@@ -16,7 +16,7 @@ const Home=({ slugs ,refs,pare}) =>
 <li>
 
  {slug.includes('...')?
-<div key={slug} style={{height:'50px',width:'75%',margin:'20px',border:'1px solid black'}}> 
+<div key={slug} style={{height:'100px',width:'75%',margin:'20px',padding:'10px',border:'1px solid black'}}> 
 <Link href={"/courselist/"+refs[i]}>
      
 <a style={{textDecoration:'none',color:'orange'}}>{slug}</a>
