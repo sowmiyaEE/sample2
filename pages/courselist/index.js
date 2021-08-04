@@ -53,7 +53,7 @@ var rf2=[];
 const rf0=files.map(filename=>
 {if(filename.includes(".md")){
 const f=filename.replace('.md','');
-const file=import(`!!raw-loader!../../course/${f}.md`);
+const file=import(`../../course/${f}.md`);
 
 rf2=matter(file.toString());
 //filename=rf2.content;
