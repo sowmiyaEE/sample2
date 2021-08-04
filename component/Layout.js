@@ -43,9 +43,9 @@ return(
   </Head>
 
 <nav 
-style={{justifyContent:'center',display:'flex',width:'50%',font:'25px/2em bold Times UI'}}
+style={{justifyContent:'center',display:'flex',width:'80%',font:'25px/2em bold Times UI'}}
 >
-<button onClick = {()=>this.handleClick()} >
+<button onClick = {()=>this.handleClick()}  style={{margin:'5px',width:'20%'}}>
 <Link href={this.props.p.golast+'/'}>
 <a>BACK</a>
 </Link>
