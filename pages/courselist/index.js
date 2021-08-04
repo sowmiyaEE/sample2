@@ -52,7 +52,8 @@ var rf2=[];
 
 const rf0=files.map(filename=>
 {if(filename.includes(".md")){
-const file=import(`../../course/${filename}`);
+const f=filename.replace('.md','');
+const file=import(`../../course/${f}.md`);
 
 rf2=matter(file.default.toString());
 //filename=rf2.content;
