@@ -7,6 +7,9 @@ module.exports = {
       test: /\.md$/,
       use: "raw-loader", 
       type: 'javascript/auto',
+      options: {
+              esModule: false,
+            },
 
     })
     return config
