@@ -55,7 +55,7 @@ const rf0=files.map(filename=>
 const f=filename.replace('.md','');
 const file=import(`../../course/${f}.md`);
 
-rf2=matter(file.default.toString());
+rf2=matter(file.toString());
 //filename=rf2.content;
 filename=rf2.data.title+"   "+rf2.data.description+"...";
 console.log('file:data:<',rf2.data,'title',rf2.data.title);
